@@ -6,6 +6,9 @@ Definiálj egy függvényt, amely egy számok listáját kapja paraméterül, é
 
 ```haskell
 filterThrees :: [Int] -> [Int]
+```
+
+```haskell
 filterThrees [] == []
 filterThrees [3, 6, 9] == [3, 6, 9]
 filterThrees [1, 2, 3, 21] == [3]
@@ -24,6 +27,9 @@ Definiálj egy függvényt, amely egy szöveget kap paraméterül, és visszaadj
 
 ```haskell
 shorten :: String -> String
+```
+
+```haskell
 shorten "" == ""
 shorten "hello" == "h"
 shorten "hello world" == "hw"
@@ -43,6 +49,9 @@ Definiálj egy függvényt, amely egy számok listáját kapja paraméterül, é
 
 ```haskell
 maxNumber :: [Int] -> Maybe Int
+```
+
+```haskell
 maxNumber [] == Nothing
 maxNumber [1] == Just 1
 maxNumber [1, 3, 2] == Just 3
@@ -61,6 +70,9 @@ Definiálj egy függvényt, amely egy szöveget kap paraméterül, és eldönti,
 
 ```haskell
 allLong :: String -> Bool
+```
+
+```haskell
 allLong "" == True
 allLong "hello" == True
 allLong "hi world" == False
@@ -81,6 +93,9 @@ Definiálj egy `Event` algebrai adattípust, amely rendezvényeket reprezentál.
 ```haskell
 data Event = Concert String Int | Lecture String Bool
 totalCost :: [Event] -> Int
+```
+
+```haskell
 totalCost [] == 0
 totalCost [Concert "Rock" 5000] == 5000
 totalCost [Lecture "Math" True] == 0

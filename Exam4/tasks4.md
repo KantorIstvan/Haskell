@@ -6,6 +6,9 @@ Definiálj egy függvényt, amely egy számok listáját kapja paraméterül, é
 
 ```haskell
 productOverFive :: [Int] -> Int
+```
+
+```haskell
 productOverFive [] == 1
 productOverFive [1, 2, 3] == 1
 productOverFive [6, 7, 8] == 336
@@ -25,6 +28,9 @@ Definiálj egy függvényt, amely egy szöveget kap paraméterül, és visszaadj
 
 ```haskell
 doubleWords :: String -> String
+```
+
+```haskell
 doubleWords "" == ""
 doubleWords "hello" == "hello hello"
 doubleWords "hello world" == "hello hello world world"
@@ -41,6 +47,9 @@ Definiálj egy függvényt, amely két számok listáját kapja paraméterül, �
 
 ```haskell
 pairSum :: [Int] -> [Int] -> [Int]
+```
+
+```haskell
 pairSum [] [] == []
 pairSum [1, 2] [3, 4] == [4, 6]
 pairSum [1, 2, 3] [4, 5] == [5, 7]
@@ -57,6 +66,9 @@ Definiálj egy függvényt, amely egy karaktert és egy szöveget kap paraméter
 
 ```haskell
 countChar :: Char -> String -> Int
+```
+
+```haskell
 countChar 'a' "" == 0
 countChar ' ' "hello world" == 1
 countChar 'i' "mississippi" == 4
@@ -74,6 +86,9 @@ Definiálj egy `Student` algebrai adattípust, amely diákokat reprezentál. Egy
 ```haskell
 data Student = Graded String Int | Ungraded String
 averageGrade :: [Student] -> Int
+```
+
+```haskell
 averageGrade [] == 0
 averageGrade [Ungraded "Anna"] == 0
 averageGrade [Graded "Béla" 4] == 4
