@@ -6,6 +6,9 @@ Definiálj egy függvényt, amely egy számok listáját kapja paraméterül, é
 
 ```haskell
 doubleEvens :: [Int] -> [Int]
+```
+
+```haskell
 doubleEvens [] == []
 doubleEvens [1, 3, 5] == []
 doubleEvens [2, 4, 6] == [4, 8, 12]
@@ -24,6 +27,9 @@ Definiálj egy függvényt, amely egy szöveget kap paraméterül, és visszaadj
 
 ```haskell
 wordLengths :: String -> [Int]
+```
+
+```haskell
 wordLengths "" == []
 wordLengths "hello" == [5]
 wordLengths "hello world" == [5, 5]
@@ -42,6 +48,9 @@ Definiálj egy függvényt, amely egy számok listáját kapja paraméterül, é
 
 ```haskell
 splitPosNeg :: [Int] -> ([Int], [Int])
+```
+
+```haskell
 splitPosNeg [] == ([], [])
 splitPosNeg [1, -2, 3, -4] == ([1, 3], [-4, -2])
 splitPosNeg [-1, -2, -3] == ([], [-3, -2, -1])
@@ -58,6 +67,9 @@ Definiálj egy függvényt, amely egy szöveget kap paraméterül, és visszaadj
 
 ```haskell
 reverseWords :: String -> String
+```
+
+```haskell
 reverseWords "" == ""
 reverseWords "hello" == "hello"
 reverseWords "hello world" == "world hello"
@@ -77,6 +89,9 @@ Definiálj egy `Book` algebrai adattípust, amely könyveket reprezentál. Egy k
 ```haskell
 data Book = SimpleBook String String | DetailedBook String String Int
 getDetailedTitles :: [Book] -> [String]
+```
+
+```haskell
 getDetailedTitles [] == []
 getDetailedTitles [SimpleBook "Cím1" "Szerző1"] == []
 getDetailedTitles [DetailedBook "Cím2" "Szerző2" 2020] == ["Cím2"]
