@@ -6,6 +6,9 @@ Definiálj egy függvényt, amely egy számok listáját kapja paraméterül, é
 
 ```haskell
 sumSevens :: [Int] -> Int
+```
+
+```haskell
 sumSevens [] == 0
 sumSevens [1, 2, 3] == 0
 sumSevens [7, 14, 21] == 42
@@ -19,6 +22,9 @@ Definiálj egy függvényt, amely egy szöveget kap paraméterül, és visszaadj
 
 ```haskell
 capitalizeLast :: String -> String
+```
+
+```haskell
 capitalizeLast "" == ""
 capitalizeLast "hello" == "hellO"
 capitalizeLast "hello world" == "hellO worlD"
@@ -32,6 +38,9 @@ Definiálj egy függvényt, amely egy számok listáját kapja paraméterül, é
 
 ```haskell
 splitFive :: [Int] -> ([Int], [Int])
+```
+
+```haskell
 splitFive [] == ([], [])
 splitFive [1, 6, 3] == ([1, 3], [6])
 splitFive [5, 2, 8] == ([2], [8])
@@ -45,6 +54,9 @@ Definiálj egy függvényt, amely egy szöveget kap paraméterül, és visszaadj
 
 ```haskell
 evenChars :: String -> String
+```
+
+```haskell
 evenChars "" == ""
 evenChars "hello" == "hlo"
 evenChars "alma" == "am"
@@ -59,6 +71,9 @@ Definiálj egy `Shop` algebrai adattípust, amely üzleteket reprezentál. Egy �
 ```haskell
 data Shop = Grocery String Int | Clothing String String
 totalProducts :: [Shop] -> Int
+```
+
+```haskell
 totalProducts [] == 0
 totalProducts [Grocery "ABC" 50] == 50
 totalProducts [Clothing "Fashion" "9-18"] == 0

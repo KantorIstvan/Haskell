@@ -6,6 +6,9 @@ Definiálj egy függvényt, amely egy (név mint `String`, pontszám mint `Int`)
 
 ```haskell
 filterNames :: [(String, Int)] -> Char -> Int -> [String]
+```
+
+```haskell
 filterNames [("Alice", 85), ("Bob", 90), ("Charlie", 70)] 'A' 80 == ["Alice"]
 filterNames [("David", 60), ("Eve", 95), ("Frank", 80)] 'E' 90 == ["Eve"]
 filterNames [] 'A' 50 == []
@@ -18,6 +21,9 @@ Definiálj egy függvényt, amely egy egész számok listáját és két függv�
 
 ```haskell
 applyEvenOdd :: [Int] -> (Int -> Int) -> (Int -> Int) -> [Int]
+```
+
+```haskell
 applyEvenOdd [1, 3, 4] (*2) (+1) == [2, 4, 8]
 applyEvenOdd [] (*2) (+1) == []
 applyEvenOdd [5, 7, 9] (*2) (+1) == [6, 8, 10]
@@ -30,6 +36,9 @@ Definiálj egy függvényt, amely két listát kap és összefésüli az elemeik
 
 ```haskell
 interleave :: [a] -> [a] -> [a]
+```
+
+```haskell
 interleave [1, 2, 3] [4, 5, 6] == [1, 4, 2, 5, 3, 6]
 interleave [1, 2] [3, 4, 5, 6] == [1, 3, 2, 4, 5, 6]
 interleave [] [1, 2, 3] == [1, 2, 3]
@@ -42,6 +51,9 @@ Definiálj egy függvényt, amely egy sztringet és egy karakterek listáját ka
 
 ```haskell
 filterChars :: String -> [Char] -> String
+```
+
+```haskell
 filterChars "hello" ['h', 'e', 'l'] == "hell"
 filterChars "abcde" ['b', 'd'] == "bd"
 filterChars "12345" ['1', '3', '5'] == "135"

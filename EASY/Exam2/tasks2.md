@@ -6,6 +6,9 @@ Definiálj egy függvényt, amely egy számok listáját kapja paraméterül, é
 
 ```haskell
 squareSmall :: [Int] -> [Int]
+```
+
+```haskell
 squareSmall [] == []
 squareSmall [1, 2, 3] == [1, 4, 9]
 squareSmall [10, 5, 15] == [25]
@@ -19,6 +22,9 @@ Definiálj egy függvényt, amely egy szöveget kap paraméterül, és visszaadj
 
 ```haskell
 countWords :: String -> Int
+```
+
+```haskell
 countWords "" == 0
 countWords "hello" == 1
 countWords "hello world" == 2
@@ -32,6 +38,9 @@ Definiálj egy függvényt, amely egy számok listáját kapja paraméterül, é
 
 ```haskell
 evenIndices :: [Int] -> [Int]
+```
+
+```haskell
 evenIndices [] == []
 evenIndices [1] == [1]
 evenIndices [1, 2, 3] == [1, 3]
@@ -45,6 +54,9 @@ Definiálj egy függvényt, amely egy szöveget kap paraméterül, és minden 'a
 
 ```haskell
 replaceA :: String -> String
+```
+
+```haskell
 replaceA "" == ""
 replaceA "alma" == "elme"
 replaceA "hello" == "hello"
@@ -59,6 +71,9 @@ Definiálj egy `Vehicle` algebrai adattípust, amely járműveket reprezentál. 
 ```haskell
 data Vehicle = Car String Int | Bike String String
 carSpeedSum :: [Vehicle] -> Int
+```
+
+```haskell
 carSpeedSum [] == 0
 carSpeedSum [Car "Sedan" 120] == 120
 carSpeedSum [Bike "Sport" "Red"] == 0
