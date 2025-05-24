@@ -58,9 +58,6 @@ A feladatok többek között az alábbi témaköröket fedik le:
     <td>🔍 <b>Mintaillesztés</b></td>
     <td>❓ <b>Maybe típus használata</b></td>
   </tr>
-  <tr>
-    <td colspan="2">🔗 <b>Függvénykompozíció</b></td>
-  </tr>
 </table>
 
 ---
