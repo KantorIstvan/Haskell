@@ -61,6 +61,7 @@ evenChars "" == ""
 evenChars "hello" == "hlo"
 evenChars "alma" == "am"
 evenChars "haskell" == "hsel"
+evenChars "beaftzydudfratsvz" == "batyufasz"
 evenChars "a" == "a"
 ```
 

@@ -73,7 +73,7 @@ totalCredits :: [Course] -> Int
 
 ```haskell
 totalCredits [Lecture "Math" 100 3] == 300
-totalCredits [Lab "Physics" ["oscilloscope"] 2] == 0
+totalCredits [Lab "Zabhegyezes" ["zab", "hegyezo"] 2] == 0
 totalCredits [Composite [Lecture "CS" 50 4, Lab "AI Lab" ["GPU"] 2, Lecture "Stats" 30 3]] == 290
 totalCredits [] == 0
 totalCredits [Composite [Lecture "Bio" 20 3,Composite [Lab "Chem Lab" ["microscope"] 1,Lecture "Math" 40 5]]] == 260

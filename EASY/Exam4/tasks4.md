@@ -90,10 +90,10 @@ averageGrade :: [Student] -> Int
 
 ```haskell
 averageGrade [] == 0
-averageGrade [Ungraded "Anna"] == 0
-averageGrade [Graded "Béla" 4] == 4
-averageGrade [Graded "Anna" 5, Graded "Béla" 3] == 4
-averageGrade [Ungraded "Kata", Ungraded "Lajos", Ungraded "Márton"] == 0
+averageGrade [Ungraded "Angela"] == 0
+averageGrade [Graded "Johhny" 4] == 4
+averageGrade [Graded "Savannah" 5, Graded "Violet" 3] == 4
+averageGrade [Ungraded "Ava", Ungraded "Riley", Ungraded "Mia"] == 0
 averageGrade (take 10 [Graded ("Student" ++ show n) 5 | n <- [1..]]) == 5  -- Végtelen lista csupa 5-ös jeggyel
 averageGrade (take 8 (cycle [Graded "A" 4, Graded "B" 2])) == 3  -- Ciklikusan ismétlődő 4-es és 2-es jegyek
 averageGrade (take 5 (zipWith (\n s -> Graded s (1 + n `mod` 5)) [1..] (cycle ["A","B","C"]))) == 3  -- Komplex lista kifejezés

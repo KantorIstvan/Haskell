@@ -14,11 +14,11 @@ filterThrees [3, 6, 9] == [3, 6, 9]
 filterThrees [1, 2, 3, 21] == [3]
 filterThrees [15, 18, 20] == [15, 18]
 filterThrees [4, 5, 6] == [6]
+filterThrees (take 30 (cycle [4,5,6,7,8,9])) == [6,9,6,9,6,9,6,9,6,9]  -- Ciklikus lista szűrése
 filterThrees [3*n | n <- [1..10]] == [3,6,9,12,15,18]  -- Az első hat 3-mal osztható szám
 filterThrees (filter (<20) $ filter (\x -> x `mod` 3 == 0) [1..100]) == [3,6,9,12,15,18]
 filterThrees [1..100] == [3,6,9,12,15,18]  -- Az összes megfelelő szám 1 és 100 között
 filterThrees (take 50 [3,6..]) == [3,6,9,12,15,18]  -- Végtelen lista 3-mal osztható számokból
-filterThrees (take 30 (cycle [1,2,3,4,5,6])) == [3,6,3,6,3,6,3,6,3,6]  -- Ciklikus lista szűrése
 ```
 
 #### 2. Szöveg rövidítése (2 pont)
@@ -33,8 +33,8 @@ shorten :: String -> String
 shorten "" == ""
 shorten "hello" == "h"
 shorten "hello world" == "hw"
-shorten "a b c" == "abc"
-shorten "haskell is fun" == "hif"
+shorten "fiatalok a szervezett zsongásért" == "fasz"
+shorten "haskell is garbage" == "hig"
 shorten (unwords (replicate 5 "hello")) == "hhhhh"  -- 5-ször ismételt "hello"
 shorten (unwords $ map (\c -> [c]) "haskell") == "haskell"  -- Különálló betűk rövidítése
 shorten (unwords (take 10 (repeat "hello"))) == "hhhhhhhhhh"  -- Végtelen "hello" lista első 10 eleme
