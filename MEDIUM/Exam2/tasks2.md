@@ -72,9 +72,9 @@ oldVaccinatedDogsNames :: [Animal] -> Int -> String -> [String]
 ```
 
 ```haskell
-oldVaccinatedDogsNames[ Dog "Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios Cipriano de la Santísima Trinidad Ruiz Picasso" 5 "Labrador" ["Rabies", "Distemper"], Cat "Whiskers" "Black" ["Ball"], Dog "Buddy" 3 "Beagle" ["Rabies"]] 4 "Rabies" == ["Rex"]
+oldVaccinatedDogsNames[ Dog "Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios Cipriano de la Santísima Trinidad Ruiz Picasso" 5 "Labrador" ["Rabies", "Distemper"], Cat "Whiskers" "Black" ["Ball"], Dog "Buddy" 3 "Beagle" ["Rabies"]] 4 "Rabies" == ["Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios Cipriano de la Santísima Trinidad Ruiz Picasso"]
 oldVaccinatedDogsNames [] 10 "Rabies" == []
 oldVaccinatedDogsNames[ Cat "Mittens" "White" ["Laser Pointer"], Cat "Snowball" "Gray" ["Feather"]] 5 "Rabies" == []
-oldVaccinatedDogsNames[ Dog "Lewis Hamilton" 7 "Shepherd" ["Rabies"], Dog "Luna" 2 "Poodle" ["Rabies"]] 5 "Rabies" == ["Max"]
+oldVaccinatedDogsNames[ Dog "Lewis Hamilton" 7 "Shepherd" ["Rabies"], Dog "Luna" 2 "Poodle" ["Rabies"]] 5 "Rabies" == ["Lewis Hamilton"]
 oldVaccinatedDogsNames [ Dog "Fido" 6 "Bulldog" ["Distemper"], Dog "Bolt" 8 "Husky" ["Rabies", "Distemper"]] 5 "Distemper" == ["Fido", "Bolt"]
 ```
