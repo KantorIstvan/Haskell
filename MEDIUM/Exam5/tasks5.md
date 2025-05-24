@@ -6,6 +6,9 @@ Definiálj egy függvényt, amely egy egész számok listáját kapja, és vissz
 
 ```haskell
 maxDiff :: [Int] -> Int
+```
+
+```haskell
 maxDiff [1, 3, 2, 5] == 3  -- különbségek: 2, 1, 3
 maxDiff [5] == 0
 maxDiff [] == 0
@@ -18,6 +21,9 @@ Definiálj egy függvényt, amely egy listát kap, és visszaadja az első két 
 
 ```haskell
 firstTwo :: [a] -> Maybe (a, a)
+```
+
+```haskell
 firstTwo [1, 2, 3] == Just (1, 2)
 firstTwo [1] == Nothing
 firstTwo [] == Nothing
@@ -30,6 +36,9 @@ Definiálj egy függvényt, amely egy listák listáját kapja, és visszaad egy
 
 ```haskell
 flatten :: [[a]] -> [a]
+```
+
+```haskell
 flatten [[1, 2], [3, 4], [5]] == [1, 2, 3, 4, 5]
 flatten [] == []
 flatten [[], [1], [2, 3]] == [1, 2, 3]
@@ -42,6 +51,9 @@ Definiálj egy függvényt, amely egy sztringet kap, és visszaad egy új sztrin
 
 ```haskell
 swapCase :: String -> String
+```
+
+```haskell
 swapCase "Hello World" == "hELLO wORLD"
 swapCase "123 ABC" == "123 abc"
 swapCase "" == ""
@@ -55,6 +67,9 @@ Definiálj egy `Transaction` algebrai adattípust a pénzügyi tranzakciók repr
 ```haskell
 data Transaction = Deposit Int | Withdrawal Int
 finalBalance :: [Transaction] -> Int
+```
+
+```haskell
 finalBalance [Deposit 100, Withdrawal 50, Deposit 200] == 250
 finalBalance [] == 0
 finalBalance [Withdrawal 100] == -100

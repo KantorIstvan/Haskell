@@ -6,6 +6,9 @@ Definiálj egy függvényt, amely egy `Maybe Int` értékek listáját kapja, é
 
 ```haskell
 sumJust :: [Maybe Int] -> Int
+```
+
+```haskell
 sumJust [Just 1, Nothing, Just 3] == 4
 sumJust [] == 0
 sumJust [Nothing, Nothing] == 0
@@ -18,6 +21,9 @@ Definiálj egy függvényt, amely egy párok listáját kapja, ahol az első ele
 
 ```haskell
 splitEvenPairs :: [(Int, b)] -> ([Int], [b])
+```
+
+```haskell
 splitEvenPairs [(2, 'a'), (3, 'b'), (4, 'c')] == ([2, 4], ['a', 'c'])
 splitEvenPairs [(1, 'x'), (5, 'y')] == ([], [])
 splitEvenPairs [] == ([], [])
@@ -30,6 +36,9 @@ Definiálj egy függvényt, amely egy predikátumot és egy listát kap, és vis
 
 ```haskell
 indicesWhere :: (a -> Bool) -> [a] -> [Int]
+```
+
+```haskell
 indicesWhere even [1, 2, 3, 4, 5] == [1, 3]
 indicesWhere null ["a", "", "b", ""] == [1, 3]
 indicesWhere (>0) [-1, 0, 1] == [2]
@@ -42,6 +51,9 @@ Definiálj egy függvényt, amely egy sztringet kap, és visszaad egy új sztrin
 
 ```haskell
 replaceVowels :: String -> String
+```
+
+```haskell
 replaceVowels "hello" == "h*ll*"
 replaceVowels "haskell" == "h*sk*ll"
 replaceVowels "xyz" == "xyz"
@@ -55,7 +67,11 @@ Definiálj egy Course algebrai adattípust, amely reprezentálhat egy Lecture-t 
 Ezután definiálj egy függvényt, amely egy Course listát kap, és visszaadja a hallgatók által összesen megszerzett kreditmennyiséget (csak a Lecture és Lab kurzusokat számolva, a Composite kurzusokat rekurzívan bontva le).
 
 ```haskell
+data Course = Lecture String Int Int | Lab String [String] Int | Composite [Course]
 totalCredits :: [Course] -> Int
+```
+
+```haskell
 totalCredits [Lecture "Math" 100 3] == 300
 totalCredits [Lab "Physics" ["oscilloscope"] 2] == 0
 totalCredits [Composite [Lecture "CS" 50 4, Lab "AI Lab" ["GPU"] 2, Lecture "Stats" 30 3]] == 290

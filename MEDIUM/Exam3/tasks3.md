@@ -6,6 +6,9 @@ Definiálj egy függvényt, amely egy sztringek listáját kapja, és visszaadja
 
 ```haskell
 longStrings :: [String] -> [(String, Int)]
+```
+
+```haskell
 longStrings ["hi", "hello", "world", "ok"] == [("hello", 5), ("world", 5)]
 longStrings ["a", "b", "c"] == []
 longStrings [] == []
@@ -18,6 +21,9 @@ Definiálj egy függvényt, amely egy egész számok listáját kapja, és vissz
 
 ```haskell
 productPositives :: [Int] -> Int
+```
+
+```haskell
 productPositives [1, 2, 3] == 6
 productPositives [-1, 2, 3] == 6
 productPositives [-1, -2, -3] == 1
@@ -30,6 +36,9 @@ Definiálj egy függvényt, amely egy listát kap, és visszaad egy új listát,
 
 ```haskell
 removeDuplicates :: Eq a => [a] -> [a]
+```
+
+```haskell
 removeDuplicates [1, 2, 2, 3, 4, 4, 5] == [1, 2, 3, 4, 5]
 removeDuplicates "hello" == "helo"
 removeDuplicates [] == []
@@ -42,6 +51,9 @@ Definiálj egy függvényt, amely két egész számok listáját kapja, és viss
 
 ```haskell
 diffIfGreater :: [Int] -> [Int] -> [Int]
+```
+
+```haskell
 diffIfGreater [5, 3, 7] [2, 4, 6] == [3, 1]  -- 5-2=3, 7-6=1
 diffIfGreater [1, 2, 3] [4, 5, 6] == []  -- nincs különbség
 diffIfGreater [] [1, 2, 3] == []
@@ -60,6 +72,9 @@ Végül, definiálj egy fictionTitlesByAuthorsBornAfter függvényt, amely egy �
 data Author = Author String Int
 data Book = Fiction Author String Int | NonFiction Author String String
 fictionTitlesByAuthorsBornAfter :: Int -> [Book] -> [String]
+```
+
+```haskell
 fictionTitlesByAuthorsBornAfter 1900 [Fiction (Author "Orwell" 1903) "1984" 1949, NonFiction (Author "Harari" 1976) "Sapiens" "History", Fiction (Author "Herbert" 1920) "Dune" 1965] == ["1984", "Dune"]
 fictionTitlesByAuthorsBornAfter 2000 [] == []
 fictionTitlesByAuthorsBornAfter 1800 [NonFiction (Author "Dawkins" 1941) "The Selfish Gene" "Biology"] == []

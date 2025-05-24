@@ -6,6 +6,9 @@ Definiálj egy függvényt, amely egy egész számok listáját kapja, és vissz
 
 ```haskell
 sumEvenSquares :: [Int] -> Int
+```
+
+```haskell
 sumEvenSquares [] == 0
 sumEvenSquares [1, 2, 3, 4] == 20  -- 2^2 + 4^2 = 20
 sumEvenSquares [2, 4, 6] == 56  -- 2^2 + 4^2 + 6^2 = 56
@@ -18,6 +21,9 @@ Definiálj egy függvényt, amely egy sztringet kap, és visszaad egy új sztrin
 
 ```haskell
 capitalizeWords :: String -> String
+```
+
+```haskell
 capitalizeWords "hello world" == "Hello World"
 capitalizeWords "a b c" == "A B C"
 capitalizeWords "haskell" == "Haskell"
@@ -30,6 +36,9 @@ Definiálj egy függvényt, amely egy egész számok listáját kapja, és vissz
 
 ```haskell
 cumulativeSum :: [Int] -> [Int]
+```
+
+```haskell
 cumulativeSum [] == []
 cumulativeSum [1] == [1]
 cumulativeSum [1, 2, 3] == [1, 3, 6]
@@ -42,6 +51,9 @@ Definiálj egy függvényt, amely egy függvények listáját (típus: `a -> b`)
 
 ```haskell
 applyAll :: [a -> b] -> a -> [b]
+```
+
+```haskell
 applyAll [(+1), (*2)] 3 == [4, 6]
 applyAll [length, sum] [1, 2, 3] == [3, 6]
 applyAll [] 5 == []
@@ -55,7 +67,8 @@ Definiálj egy Animal algebrai adattípust az állatok reprezentálására. Egy 
 Ezután definiálj egy oldVaccinatedDogNames nevű függvényt, amely egy Animal listát, egy korhatárt (Int) és egy oltás nevét (String) kap paraméterül. A függvény adja vissza azoknak a kutyáknak a neveit, amelyek idősebbek a megadott korhatárnál, és rendelkeznek a megadott oltással.
 
 ```haskell
-oldVaccinatedDogsNames :: [Animals] -> Int -> String -> [String]
+data Animal = Dog String Int String [String] | Cat String String [String]
+oldVaccinatedDogsNames :: [Animal] -> Int -> String -> [String]
 ```
 
 ```haskell
