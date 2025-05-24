@@ -45,17 +45,23 @@ Minden nehézségi szinten belül számozott vizsga mintákat találsz (Exam1, E
 
 A feladatok többek között az alábbi témaköröket fedik le:
 
-```haskell
-témakörök = [
-  "Listafeldolgozás és lista-kifejezések",
-  "Rekurzív függvények",
-  "Magasabbrendű függvények",
-  "Algebraikus adattípusok",
-  "Mintaillesztés",
-  "Maybe típus használata",
-  "Függvénykompozíció"
-]
-```
+<table>
+  <tr>
+    <td>📊 <b>Listafeldolgozás és lista-kifejezések</b></td>
+    <td>🔄 <b>Rekurzív függvények</b></td>
+  </tr>
+  <tr>
+    <td>⚙️ <b>Magasabbrendű függvények</b></td>
+    <td>🧩 <b>Algebraikus adattípusok</b></td>
+  </tr>
+  <tr>
+    <td>🔍 <b>Mintaillesztés</b></td>
+    <td>❓ <b>Maybe típus használata</b></td>
+  </tr>
+  <tr>
+    <td colspan="2">🔗 <b>Függvénykompozíció</b></td>
+  </tr>
+</table>
 
 ---
 
