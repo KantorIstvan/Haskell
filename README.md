@@ -10,12 +10,13 @@
 
 ## 🗂️ A Repository Felépítése
 
-A feladatok két fő nehézségi szint szerint vannak csoportosítva:
+A feladatok három fő kategória szerint vannak csoportosítva:
 
 - 🟢 **EASY**: Kezdő szintű feladatok, amelyek az alapvető Haskell koncepciókat gyakoroltatják
 - 🟠 **MEDIUM**: Összetettebb feladatok, amelyek mélyebb tudást igényelnek
+- 🔴 **REAL**: Valódi vizsgafeladatok korábbi évekből, amelyek valódi vizsga körülményeket tükröznek
 
-Minden nehézségi szinten belül számozott vizsga mintákat találsz (Exam1, Exam2, stb.), amelyek tartalmaznak:
+Minden kategórián belül számozott vizsga mintákat találsz (Exam1, Exam2, stb.), amelyek tartalmaznak:
 
 - 📝 **tasksX.md**: A feladatok leírása magyarázatokkal és tesztekkel
 - 💻 **ExamX.hs**: A feladatok megoldásai
@@ -27,6 +28,7 @@ Minden nehézségi szinten belül számozott vizsga mintákat találsz (Exam1, E
 1. **Önálló gyakorlás**: Először próbáld meg önállóan megoldani a feladatokat a `tasksX.md` fájlok alapján
 2. **Ellenőrzés**: Hasonlítsd össze megoldásaidat a megadott `ExamX.hs` fájlokkal
 3. **Fokozatosság**: Kezdd az EASY kategóriával, majd ha már magabiztosan megoldod ezeket, lépj tovább a MEDIUM szintre
+4. **Valódi vizsga szimuláció**: A REAL mappában található feladatokat időkorláttal oldd meg, hogy valódi vizsgahelyzetet szimuláljanak
 
 ---
 
@@ -38,6 +40,8 @@ Minden nehézségi szinten belül számozott vizsga mintákat találsz (Exam1, E
 - 🧪 Próbálj meg minél több tesztesetet lefedni
 - 🔍 Ha elakadsz, először csak kis segítséget nézz meg a megoldásból, ne a teljes kódot
 - 📋 Gyakorold a típusok meghatározását és a függvények szignatúráinak értelmezését
+- 🔄 Ismételd át a rekurzió különböző formáit (egyszerű, farok-rekurzió)
+- 🧠 Kísérletezz különböző megoldási stratégiákkal ugyanarra a problémára
 
 ---
 
@@ -57,6 +61,37 @@ A feladatok többek között az alábbi témaköröket fedik le:
   <tr>
     <td>🔍 <b>Mintaillesztés</b></td>
     <td>❓ <b>Maybe típus használata</b></td>
+  </tr>
+  <tr>
+    <td>🔗 <b>Függvénykompozíció</b></td>
+    <td>🧮 <b>Típusosztályok</b></td>
+  </tr>
+</table>
+
+---
+
+## 📈 Nehézségi Szintek Összehasonlítása
+
+<table>
+  <tr>
+    <th>Kategória</th>
+    <th>Jellemzők</th>
+    <th>Ajánlott</th>
+  </tr>
+  <tr>
+    <td>🟢 <b>EASY</b></td>
+    <td>Alapvető listák, rekurzió, egyszerű adattípusok</td>
+    <td>Kezdőknek, alapfogalmak gyakorlásához</td>
+  </tr>
+  <tr>
+    <td>🟠 <b>MEDIUM</b></td>
+    <td>Összetettebb algoritmusok, adattípusok, magasabbrendű függvények</td>
+    <td>Haladó gyakorláshoz, vizsgafelkészüléshez</td>
+  </tr>
+  <tr>
+    <td>🔴 <b>REAL</b></td>
+    <td>Valódi vizsgafeladatok, komplexebb problémák</td>
+    <td>Vizsga előtti végső felkészüléshez</td>
   </tr>
 </table>
 
