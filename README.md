@@ -17,7 +17,7 @@ A repository az alábbi fő komponensekből áll:
 A feladatok három fő kategória szerint vannak csoportosítva:
 
 - 🟢 **EASY**: Kezdő szintű feladatok, amelyek az alapvető Haskell koncepciókat gyakoroltatják
-- 🟠 **MEDIUM**: Összetettebb feladatok, amelyek mélyebb tudást igényelnek
+- 🟠 **MEDIUM**: Összetettebb feladatok, amelyek mélyebb tudást igényelnek (A vizsgámban előfordult olyan feladat ami ebbe van, biztos megjósoltam xd)
 - 🔴 **REAL**: Valódi vizsgafeladatok korábbi évekből, amelyek valódi vizsga körülményeket tükröznek
 
 Minden kategórián belül számozott vizsga mintákat találsz (Exam1, Exam2, stb.), amelyek tartalmaznak:
