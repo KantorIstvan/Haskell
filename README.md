@@ -4,7 +4,7 @@
 
 ## 📚 Bevezető
 
-Üdvözöllek a Haskell vizsga gyakorló gyűjteményben! Ez a repository különböző nehézségi szintű Haskell feladatsorokat tartalmaz, amelyek segítenek felkészülni a funkcionális programozás vizsgákra. A feladatok az ELTE funkcionális programozás kurzusának témaköreit fedik le.
+Üdvözöllek a Haskell vizsga gyakorló gyűjteményben! Harmadik tárgyfelvétellel, azon belül a második vizsgán (💀💀💀) sikerült elvégeznem a kurzust. Hogy nektek ne kelljen ezt átélni, gyakorlás közben elkészítettem ezt a repot és megosztom veletek, hogy kis segítséget nyújtsak. Ez a repository különböző nehézségi szintű Haskell feladatsorokat tartalmaz, amelyek segítenek felkészülni a funkcionális programozás vizsgákra. A feladatok az ELTE funkcionális programozás kurzusának témaköreit fedik le.
 
 ---
 

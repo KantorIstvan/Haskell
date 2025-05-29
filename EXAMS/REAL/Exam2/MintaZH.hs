@@ -31,7 +31,7 @@ doesContain (x:xs) (y:ys)
   | otherwise = doesContain (x:xs) ys
 
 -- | 4. feladat Barbie
-
+-- Ez is egy fos feladat
 barbie :: [String] -> String
 barbie skirts = case filter (\(i, c) -> c == "rozsaszin" || (even i && c /= "fekete")) (zip [1..] skirts) of
                     [] -> "farmer"
@@ -70,7 +70,7 @@ isReservable :: Int -> String -> Bool
 isReservable 0 _ = True
 isReservable _ "" = False
 isReservable seats spaces
-  | freeSpaces seats `isPrefixOf` spaces = True
+  | freeSpaces seats `isPrefixOf` spaces = True -- True == True, bocs xd
   | otherwise = isReservable seats (drop 1 spaces)
   where
     freeSpaces :: Int -> String
@@ -81,13 +81,3 @@ isReservable 0 _ = True
 isReservable _ "" = False
 isReservable n spaces = replicate n 'x' `isInfixOf` spaces -}
 
-data Command = Forward Int | Backward Int | TurnLeft | TurnRight deriving (Show, Eq)
-
-guideback :: [Command] -> [Command]
-guideback [] = []
-guideback (x:xs) = guideback xs ++ [invert x]
-  where
-    invert (Forward n) = Backward n
-    invert (Backward n) = Forward n
-    invert TurnLeft     = TurnRight
-    invert TurnRight    = TurnLeft
