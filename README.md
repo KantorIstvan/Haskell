@@ -10,6 +10,10 @@
 
 ## 🗂️ A Repository Felépítése
 
+A repository az alábbi fő komponensekből áll:
+
+### 📋 Vizsgafelkészítő feladatok
+
 A feladatok három fő kategória szerint vannak csoportosítva:
 
 - 🟢 **EASY**: Kezdő szintű feladatok, amelyek az alapvető Haskell koncepciókat gyakoroltatják
@@ -21,6 +25,20 @@ Minden kategórián belül számozott vizsga mintákat találsz (Exam1, Exam2, s
 - 📝 **tasksX.md**: A feladatok leírása magyarázatokkal és tesztekkel
 - 💻 **ExamX.hs**: A feladatok megoldásai
 
+### 📚 Gyakorlati órai anyagok
+
+- 🖥️ **Gyak**: Ebben a mappában megtalálod a gyakorlati órák anyagait
+  - Minden gyakorlat anyaga külön fájlokban található (LessonXX.hs/LessonXXpre.hs)
+  - A fájlok tartalmazzák az órán megbeszélt példákat, bemutató kódokat és fogalmakat
+  - Ezek az anyagok kiváló alapot nyújtanak a házi feladatok megoldásához és a téma mélyebb megértéséhez
+
+### 📝 Házi feladatok
+
+- 📓 **Házi**: Ebben a mappában találhatók a kurzus során kiadott házi feladatok
+  - A házi feladatok segítenek elmélyíteni a gyakorlati órákon megszerzett tudást
+  - A feladatok megoldásai is megtalálhatók, amelyek segítenek a tanulásban
+  - Minden házi feladat kapcsolódik bizonyos gyakorlati órákhoz és témakörökhöz
+
 ---
 
 ## 🚀 Hogyan Használd?
@@ -29,6 +47,8 @@ Minden kategórián belül számozott vizsga mintákat találsz (Exam1, Exam2, s
 2. **Ellenőrzés**: Hasonlítsd össze megoldásaidat a megadott `ExamX.hs` fájlokkal
 3. **Fokozatosság**: Kezdd az EASY kategóriával, majd ha már magabiztosan megoldod ezeket, lépj tovább a MEDIUM szintre
 4. **Valódi vizsga szimuláció**: A REAL mappában található feladatokat időkorláttal oldd meg, hogy valódi vizsgahelyzetet szimuláljanak
+5. **Gyakorlati anyagok áttekintése**: A Gyak mappában található gyakorlati órai anyagok segítséget nyújtanak a fogalmak megértésében
+6. **Házi feladatok gyakorlása**: A házi feladatok megoldása segít az egyes témák elmélyítésében
 
 ---
 
@@ -42,6 +62,7 @@ Minden kategórián belül számozott vizsga mintákat találsz (Exam1, Exam2, s
 - 📋 Gyakorold a típusok meghatározását és a függvények szignatúráinak értelmezését
 - 🔄 Ismételd át a rekurzió különböző formáit (egyszerű, farok-rekurzió)
 - 🧠 Kísérletezz különböző megoldási stratégiákkal ugyanarra a problémára
+- 📚 Használd a gyakorlati órai anyagokat és mintapéldákat referenciának nehezebb feladatoknál
 
 ---
 
@@ -92,6 +113,16 @@ A feladatok többek között az alábbi témaköröket fedik le:
     <td>🔴 <b>REAL</b></td>
     <td>Valódi vizsgafeladatok, komplexebb problémák</td>
     <td>Vizsga előtti végső felkészüléshez</td>
+  </tr>
+  <tr>
+    <td>🖥️ <b>GYAK</b></td>
+    <td>Gyakorlati órák anyagai, fogalommagyarázatok, mintakódok</td>
+    <td>Alapfogalmak megértéséhez, elméleti háttérhez</td>
+  </tr>
+  <tr>
+    <td>📓 <b>HÁZI</b></td>
+    <td>Házi feladatok megoldásokkal, gyakorlati példák</td>
+    <td>Tudás elmélyítéséhez, önellenőrzéshez</td>
   </tr>
 </table>
 
