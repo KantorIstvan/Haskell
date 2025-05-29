@@ -91,43 +91,6 @@ A feladatok többek között az alábbi témaköröket fedik le:
 
 ---
 
-## 📈 Nehézségi Szintek Összehasonlítása
-
-<table>
-  <tr>
-    <th>Kategória</th>
-    <th>Jellemzők</th>
-    <th>Ajánlott</th>
-  </tr>
-  <tr>
-    <td>🟢 <b>EASY</b></td>
-    <td>Alapvető listák, rekurzió, egyszerű adattípusok</td>
-    <td>Kezdőknek, alapfogalmak gyakorlásához</td>
-  </tr>
-  <tr>
-    <td>🟠 <b>MEDIUM</b></td>
-    <td>Összetettebb algoritmusok, adattípusok, magasabbrendű függvények</td>
-    <td>Haladó gyakorláshoz, vizsgafelkészüléshez</td>
-  </tr>
-  <tr>
-    <td>🔴 <b>REAL</b></td>
-    <td>Valódi vizsgafeladatok, komplexebb problémák</td>
-    <td>Vizsga előtti végső felkészüléshez</td>
-  </tr>
-  <tr>
-    <td>🖥️ <b>GYAK</b></td>
-    <td>Gyakorlati órák anyagai, fogalommagyarázatok, mintakódok</td>
-    <td>Alapfogalmak megértéséhez, elméleti háttérhez</td>
-  </tr>
-  <tr>
-    <td>📓 <b>HÁZI</b></td>
-    <td>Házi feladatok megoldásokkal, gyakorlati példák</td>
-    <td>Tudás elmélyítéséhez, önellenőrzéshez</td>
-  </tr>
-</table>
-
----
-
 <div align="center">
   
 ### 🎓 Sikeres gyakorlást és jó vizsgát kívánok! 🎓
