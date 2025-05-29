@@ -1,0 +1,46 @@
+isSingleton [1]
+isSingleton "x"
+not (isSingleton [])
+not (isSingleton ['x','a'])
+not (isSingleton [1..])
+not (isSingleton [5,4,6])
+not (isSingleton [6,5])
+exactly2OrAtLeast4 "alma"
+exactly2OrAtLeast4 "te"
+exactly2OrAtLeast4 [1,10]
+exactly2OrAtLeast4 [1.5,9.25]
+exactly2OrAtLeast4 [1..]
+not (exactly2OrAtLeast4 [])
+not (exactly2OrAtLeast4 [1])
+not (exactly2OrAtLeast4 [1,2,3])
+not (exactly2OrAtLeast4 "nem")
+not (exactly2OrAtLeast4 "a")
+firstTwoElements [1,2] == [1,2]
+firstTwoElements "alma" == "al"
+firstTwoElements [20,9,8,7,6,5,4,3,2,1,0] == [20,9]
+firstTwoElements [2,9,5,-3,-7,6,10,2,2,3,3] == [2,9]
+firstTwoElements [10..] == [10,11]
+firstTwoElements [1.5] == []
+firstTwoElements [2] == []
+firstTwoElements "a" == []
+firstTwoElements ([] :: [Integer]) == []
+withoutThird [1,2] == [1,2]
+withoutThird [1,2,3] == [1,2]
+withoutThird "alma" == "ala"
+withoutThird [20,9,8,7,6,5,4,3,2,1,0] == [20,9,7,6,5,4,3,2,1,0]
+withoutThird [2,9,5,-3,-7,6,10,2,2,3,3] == [2,9,-3,-7,6,10,2,2,3,3]
+take 5 (withoutThird [10..]) == [10,11,13,14,15]
+withoutThird [1.5] == [1.5]
+withoutThird [2] == [2]
+withoutThird "a" == "a"
+withoutThird ([] :: [Int]) == []
+quadrupleToList (1,2,3,4) == [1,2,3,4]
+quadrupleToList ('a','b','c','d') == "abcd"
+insertSecond 1 [] == []
+insertSecond 1 [2] == [2,1]
+insertSecond 42 [1..10] == [1,42] ++ [2..10]
+insertSecond 'b' "acd" == "abcd"
+firstPairToList [] == []
+firstPairToList [(1,2)] == [1,2]
+firstPairToList [(1,2),(3,4),(5,6)] == [1,2]
+firstPairToList [('a','b'),('c','d')] == "ab"
