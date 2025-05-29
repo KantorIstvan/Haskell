@@ -81,7 +81,8 @@ isReservable 0 _ = True
 isReservable _ "" = False
 isReservable n spaces = replicate n 'x' `isInfixOf` spaces -}
 
-data Command = Forward Int | Backward Int | TurnLeft | TurnRight deriving (Show, Eq)
+--Rage vvvvvvv
+{- data Command = Forward Int | Backward Int | TurnLeft | TurnRight deriving (Show, Eq)
 
 guideback :: [Command] -> [Command]
 guideback [] = []
@@ -90,4 +91,4 @@ guideback (x:xs) = guideback xs ++ [invert x]
     invert (Forward n) = Backward n
     invert (Backward n) = Forward n
     invert TurnLeft     = TurnRight
-    invert TurnRight    = TurnLeft
+    invert TurnRight    = TurnLeft -}
