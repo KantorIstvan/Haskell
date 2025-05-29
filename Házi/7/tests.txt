@@ -1,0 +1,28 @@
+onlyEmpties []
+onlyEmpties [[],[]]
+onlyEmpties [[[],[],[]],[],[[]]]
+not $ onlyEmpties [[[1]]]
+not $ onlyEmpties [[[]],[[],[]],[[1]]]
+not $ onlyEmpties [[[1]], repeat []]
+changeYear "" == ""
+changeYear "Teszt szöveg" == "Teszt szöveg"
+changeYear "2024" == "2025"
+changeYear "2020" == "2020"
+changeYear "A kérvény leadási határideje: 2024.12.12." == "A kérvény leadási határideje: 2025.12.12."
+changeYear "Születési dátum: 2020.02.02." == changeYear "Születési dátum: 2020.02.02."
+changeYear  "Abcd_2024asd" == "Abcd_2025asd"
+changeYear "111, 202, 021, 2024, 13212" == "111, 202, 021, 2025, 13212"
+changeYear "2024, 0002024, 00002024000, 6520246782024145" == "2025, 0002025, 00002025000, 6520256782025145"
+(take 30 $ changeYear $ cycle "2024") == "202520252025202520252025202520"
+alternatingSum [] == 0
+alternatingSum [1] == 1
+alternatingSum [1,1] == 0
+alternatingSum [1,2,3] == 2
+alternatingSum [1..10] == -5
+alternatingSum [-10..10] == 0
+compress "" == ""
+compress "alma" == "alma"
+compress "alma korte barack" == "alma korte barack"
+compress "alma alma alma alma" == "(4)alma"
+compress "alma alma alma almafa alma" == "(3)alma almafa alma"
+compress "alma alma eper eper alma alma" == "(2)alma (2)eper (2)alma"

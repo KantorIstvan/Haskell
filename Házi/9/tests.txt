@@ -1,0 +1,20 @@
+pair (C Di 10) (C Cl 10) == True
+pair (C Di 14) (C Cl 2) == False
+pair (C He 14) (C He 2) == False
+pair (C Sp 2) (C Sp 2) == True
+and [ pair (C Cl i) (C He i) | i <-[1..14]] == True
+flush [C Cl 12, C Cl 13, C Cl 14] == True
+flush [C Cl 9, C Cl 10, C He 11] == False
+flush [C Sp 6, C Di 7, C Sp  8] == False
+flush [C He 3, C Sp 4, C Sp  5] == False
+flush [C Di 2] == True
+flush [] == True
+flush (replicate 10 (C He 1)) == True
+flush (take 10 (cycle [C Di 13, C He 14])) == False
+flush (replicate 9 (C He 11) ++ [C Cl 12])  == False
+search (Di, 10) [] == Nothing
+search (Di, 10) [C Cl 9, C Di 10, C Di 14, C Di 3] == Just (C Di 10)  
+search (Di, 10) [C Cl 9, C Di 14] == Nothing
+search (Di, 3)  [C Cl 9, C Di 3, C Di 14] == Just (C Di 3)  
+search (Di, 3)  [C Di 3, C Di 3, C Cl 9,C Di 14] == Just (C Di 3)  
+search (Sp, 3)  (replicate 10 (C Sp 14) ++ [(C Sp 3)]) == Just (C Sp 3) 

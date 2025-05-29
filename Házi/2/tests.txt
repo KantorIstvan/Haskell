@@ -1,0 +1,35 @@
+addV (1,2) (4,5) == (5,7)
+addV ((-1),5) (7,8) == (6,13)
+abs (fst (addV (1.22, 3.2) (5.48, 3.8)) - 6.7) < 0.00001
+abs (snd (addV (1.22, 3.2) (5.48, 3.8)) - 7.0) < 0.00001
+subV (1,2) (4,5) == ((-3),(-3))
+subV (10,9) (7,8) == (3,1)
+abs (fst (subV (1.22, 3.2) (5.48, 3.8)) + 4.26) < 0.00001
+abs (snd (subV (1.22, 3.2) (5.48, 3.8)) + 0.6) < 0.00001
+scaleV 6 (5,0) == (30,0)
+scaleV (-2) (6,7) == ((-12),(-14))
+scaleV 0 (4.5, (-7.897)) == (0.0,0.0)
+abs (fst (scaleV 1.764 (3.45, (-0.23))) - 6.0858) < 0.00000001
+abs (snd (scaleV 1.764 (3.45, (-0.23))) + 0.40572) < 0.00000001
+scalar (2,4) ((-2), 1) == 0
+scalar (5, 13) (4, 10) == 150
+abs (scalar (3.25, 4.46) ((-0.75), 0.5) + 0.2075) < 0.00000001
+0 `divides` 0
+not (0 `divides` 12)
+not (0 `divides` 100)
+12 `divides` (0 :: Integer)
+10 `divides` 0
+120 `divides` 0
+not (12 `divides` 3)
+3 `divides` 12
+1 `divides` 2
+1 `divides` 3
+1 `divides` 4
+1 `divides` 13
+not (13 `divides` 1)
+add (2 :: Integer) (3 :: Int) == (5 :: Integer)
+add (2 :: Integer) (3 :: Int) == (5 :: Integer)
+add (2 :: Integer) (3 :: Int) == (5 :: Integer)
+add (2 :: Integer) (3 :: Int) == (5 :: Integer)
+add (5 :: Integer) (4 :: Int) == (9 :: Integer)
+add (5 :: Integer) (4 :: Int) == (9 :: Integer)

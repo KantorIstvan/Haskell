@@ -1,0 +1,13 @@
+isComplement [] []
+isComplement [A,T,C,G] [T,A,G,C]
+isComplement [A,T,A,T,C,G] [T,A,T,A,G,C]
+not (isComplement [A,T,A,T,C,G] [T,A,T,A,G,G])
+not (isComplement [A,T,A,T,C,G] [A,A,T,A,G,C])
+netGain [Purchase 1000] == -1000
+netGain [Purchase 100, Transfer 500 123, Receive 700 456 "Fizetés"] == 100
+netGain [Receive 15000 123 "Ebédpénz", Purchase 10000, Purchase 5000] == 0
+not (wasNegative [])
+not (wasNegative [Receive 1000 123 "Ebédpénz", Purchase 1000])
+wasNegative [Purchase 100, Transfer 500 123, Receive 700 456 "Fizetés"]
+not (wasNegative [Receive 15000 123 "Ebédpénz", Purchase 10000, Purchase 5000])
+wasNegative [Receive 15000 123 "Ebédpénz", Purchase 15001, Receive 2 456 "Visszajáró"]

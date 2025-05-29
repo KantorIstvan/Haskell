@@ -1,0 +1,43 @@
+toUpperThird "a" == "a"
+toUpperThird "az" == "az"
+toUpperThird "kap" == "kaP"
+toUpperThird "alma" == "alMa"
+toUpperThird "ALMA" == "ALMA"
+take 20 (toUpperThird (repeat 'b')) == "bbBbbbbbbbbbbbbbbbbb"
+isSorted ([] :: [Integer])
+isSorted [1::Int]
+isSorted [1::Integer]
+isSorted [1::Double]
+isSorted "a"
+isSorted [5,6,9,10]
+isSorted "aabcddddefg"
+isSorted [(-2),(-1),1,9,10,19]
+isSorted "adn"
+not (isSorted [10,9,8,7,6,5,4,3,2,1,0])
+not (isSorted "alma")
+not (isSorted [10,9..])
+not (isSorted ([1..10] ++ [9,8..]))
+cipher "PYdg7iT4vdO0n4AgmGfUpRzogAf" == "dg"
+cipher "PYdgaiTLvdOKnAAgmGfUpRzogA4" == "gA"
+cipher "4vkYyAO174midQTt0" == "AO"
+cipher "BwxwEwqCKHuMTAaPn" == ""
+cipher ['\0'..] == "./"
+cipher "dM7" == "dM"
+cipher "777" == "77"
+cipher "Kmz" == ""
+cipher "Zk"  == ""
+cipher "T4"  == ""
+cipher "" == ""
+doubleElements [1,2,3] == [1,1,2,2,3,3]
+null (doubleElements [])
+doubleElements "alma" == "aallmmaa"
+take 10 (doubleElements [0..]) == [0,0,1,1,2,2,3,3,4,4]
+deleteDuplicateSpaces "alma  szilva    barack" == "alma szilva barack"
+deleteDuplicateSpaces "    alma  szilva    barack    eper   " == "alma szilva barack eper"
+deleteDuplicateSpaces "    alma  szilva    barack    eper" == "alma szilva barack eper"
+deleteDuplicateSpaces "    alma  szilva    barack    eper " == "alma szilva barack eper"
+deleteDuplicateSpaces "alma  szilva    barack    eper  " == "alma szilva barack eper"
+deleteDuplicateSpaces " alma  szilva    barack    eper   " == "alma szilva barack eper"
+take 12 (deleteDuplicateSpaces (cycle "a   b")) == "a ba ba ba b"
+null (deleteDuplicateSpaces "       ")
+null (deleteDuplicateSpaces "")

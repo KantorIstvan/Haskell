@@ -1,0 +1,19 @@
+password "" == ""
+password "akacfa2" == "*******"    
+password "hunter1234" == "**********" 
+password ['a'] == ['*']
+password [] == []
+filterIncPairs [] == []
+filterIncPairs [(2,2)] == []
+filterIncPairs [(1,2), (2,3)] == [(1,2), (2,3)]
+filterIncPairs [(1,2), (2,2), (2,1), (2,3)] == [(1,2), (2,3)]
+startsWithUpper [] == []
+startsWithUpper [""] == []
+startsWithUpper ["A"] == ["A"]
+startsWithUpper ["ez", "egy", "mondat"] == []
+startsWithUpper ["ez", "egy", "Szo", "Meg", "egy" ,"mondat"] == ["Szo", "Meg"]
+startsWithUpper ["ez", "", "Szo", "Meg", "egy" ,"", "E"] == ["Szo", "Meg", "E"]
+startsWithUpper ["Π"] == ["Π"]
+onlySingletons [[],[1],[1,2],[1,2,3],[2],[2,3],[3]] == [[1],[2],[3]]
+onlySingletons [[1..],[],[1..10]] == []
+onlySingletons ["a","b","c","d","e","f"] == ["a","b","c","d","e","f"]

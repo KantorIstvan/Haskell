@@ -1,0 +1,11 @@
+map countWordsInLine testFile0 == [2,2,0,2]
+countWords testFile0 == 6
+countChars testFile0 == 27
+map capitalizeWordsInLine testFile0 == ["Asd Qwe","-- Foo","","Hello World"]
+map isComment testFile0 == [False,True,False,False]
+dropComments testFile0 == ["asd  qwe","","\thello world "]
+numberLines testFile0 == ["1: asd  qwe","2: -- Foo","3: ","4: \thello world "]
+dropTrailingWhitespaces "Hello world            " == "Hello world"
+dropTrailingWhitespaces "         Hello world            " == "         Hello world"
+(map (replaceTab 3) $ concat testFile0) == ["a","s","d"," "," ","q","w","e","-","-"," ","F","o","o","   ","h","e","l","l","o"," ","w","o","r","l","d"," "]
+replaceTabs 5 testFile0 == ["asd  qwe","-- Foo","","     hello world "]
