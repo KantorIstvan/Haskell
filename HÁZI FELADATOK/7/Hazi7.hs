@@ -30,7 +30,8 @@ changeYear (x:xs) = x : changeYear xs
 changeYear [] = []
 
 --4. Feladat
-
+{- Random nevetségesen nehéz feladat, hogy megbizonyosodjanak, hogy mindenki
+AI-al csinálja a házikat xdd -}
 compress :: String -> String
 compress s = compress' (words s)
   where

@@ -4,7 +4,7 @@
 
 ## 📚 Bevezető
 
-Üdvözöllek a Haskell vizsga gyakorló gyűjteményben! Harmadik tárgyfelvétellel, azon belül a második vizsgán (💀💀💀) sikerült elvégeznem a kurzust. Hogy nektek ne kelljen ezt átélni, gyakorlás közben elkészítettem ezt a repot és megosztom veletek, hogy kis segítséget nyújtsak. Ez a repository különböző nehézségi szintű Haskell feladatsorokat tartalmaz, amelyek segítenek felkészülni a funkcionális programozás vizsgákra. A feladatok az ELTE funkcionális programozás kurzusának témaköreit fedik le.
+Üdvözöllek a Haskell vizsga gyakorló gyűjteményben! Harmadik tárgyfelvétellel, azon belül a második vizsgán (💀💀💀) sikerült elvégeznem a kurzust. Hogy nektek ne kelljen ezt átélni, gyakorlás közben elkészítettem ezt a repot és megosztom veletek, hogy kis segítséget nyújtsak. Ez a repository különböző nehézségi szintű Haskell feladatsorokat tartalmaz, amelyek segítenek felkészülni a funkcionális programozás vizsgákra.
 
 ---
 
@@ -27,15 +27,13 @@ Minden kategórián belül számozott vizsga mintákat találsz (Exam1, Exam2, s
 
 ### 📚 Gyakorlati órai anyagok
 
-- 🖥️ **Gyak**: Ebben a mappában megtalálod a gyakorlati órák anyagait
+- 🖥️ **Gyak**: Ebben a mappában megtalálod az oktatók által készített gyakorlati órák anyagait
   - Minden gyakorlat anyaga külön fájlokban található (LessonXX.hs/LessonXXpre.hs)
   - A fájlok tartalmazzák az órán megbeszélt példákat, bemutató kódokat és fogalmakat
-  - Ezek az anyagok kiváló alapot nyújtanak a házi feladatok megoldásához és a téma mélyebb megértéséhez
 
 ### 📝 Házi feladatok
 
 - 📓 **Házi**: Ebben a mappában találhatók a kurzus során kiadott házi feladatok
-  - A házi feladatok segítenek elmélyíteni a gyakorlati órákon megszerzett tudást
   - A feladatok megoldásai is megtalálhatók, amelyek segítenek a tanulásban
   - Minden házi feladat kapcsolódik bizonyos gyakorlati órákhoz és témakörökhöz
 
@@ -45,23 +43,17 @@ Minden kategórián belül számozott vizsga mintákat találsz (Exam1, Exam2, s
 
 1. **Önálló gyakorlás**: Először próbáld meg önállóan megoldani a feladatokat a `tasksX.md` fájlok alapján
 2. **Ellenőrzés**: Hasonlítsd össze megoldásaidat a megadott `ExamX.hs` fájlokkal
-3. **Fokozatosság**: Kezdd az EASY kategóriával, majd ha már magabiztosan megoldod ezeket, lépj tovább a MEDIUM szintre
-4. **Valódi vizsga szimuláció**: A REAL mappában található feladatokat időkorláttal oldd meg, hogy valódi vizsgahelyzetet szimuláljanak
-5. **Gyakorlati anyagok áttekintése**: A Gyak mappában található gyakorlati órai anyagok segítséget nyújtanak a fogalmak megértésében
-6. **Házi feladatok gyakorlása**: A házi feladatok megoldása segít az egyes témák elmélyítésében
+3. **Valódi vizsga szimuláció**: A REAL mappában található feladatokat időkorláttal oldd meg, hogy valódi vizsgahelyzetet szimuláljanak
+4. **Gyakorlati anyagok áttekintése**: A Gyak mappában található gyakorlati órai anyagok segítséget nyújtanak a fogalmak megértésében
 
 ---
 
 ## 💡 Tippek a Gyakorláshoz
 
-> 💪 **Maximalizáld a tanulásod hatékonyságát!**
-
 - ⏱️ Oldd meg a feladatokat időkorláttal, mintha valódi vizsgán lennél
-- 🧪 Próbálj meg minél több tesztesetet lefedni
-- 🔍 Ha elakadsz, először csak kis segítséget nézz meg a megoldásból, ne a teljes kódot
+- 🧪 Próbáld meg az összes tesztesetet lefedni
 - 📋 Gyakorold a típusok meghatározását és a függvények szignatúráinak értelmezését
-- 🔄 Ismételd át a rekurzió különböző formáit (egyszerű, farok-rekurzió)
-- 🧠 Kísérletezz különböző megoldási stratégiákkal ugyanarra a problémára
+- 🔄 Ismételd át a rekurzió különböző formáit
 - 📚 Használd a gyakorlati órai anyagokat és mintapéldákat referenciának nehezebb feladatoknál
 
 ---

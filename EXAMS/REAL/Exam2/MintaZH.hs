@@ -80,4 +80,5 @@ isReservable seats spaces
 isReservable 0 _ = True
 isReservable _ "" = False
 isReservable n spaces = replicate n 'x' `isInfixOf` spaces -}
+-- Ez a megoldás sokkal egyszerűbb, de valamiért nem az isInfixOf függvényt ajánlották 🤔
 
